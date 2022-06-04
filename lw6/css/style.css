@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+*                                /*убрать отступы и поля у всех элементов на странице*/
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container                      /*Ограничить ширину контентной части*/ 
+{
+    max-width: 1680px;
+    margin: 0 auto;             /*ограничить блочные элементы по центру*/
+}
+.wrapper
+{
+    min-width: 100%;            /*чтобы стр была видна вся*/
+    overflow: hidden;           /*чтобы за границы ничего не вылезло*/
+    display: flex;             /*сделает из него flex контейнер, чтобы футер всегда был внизу (при отсутствии контента) стили в content*/
+    flex-direction: column;     /*элементы перевернет - футер внизу*/
+}
+.content
+{
+    flex: 1 1 auto;             /*позволяю flex эл увеличиваться и уменьшаться и базовый размер у него автоматический*/         
+}
+.menu                                    /*          МЕНЮ        */
+{
+    display: flex;                        /*<!-- flex контейнер -->*/
+    padding: 35px 110px 0;               /*отступы этого ряда посмотреть*/
+    justify-content: space-between;        /*прижала к краям*/
+} 
+.menu__body
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.menu__list
+{
+    list-style: none;
+    display: flex;                      /*список выстраивается в ряд*/
+}
+.menu li
+{
+     margin: 0 75px 0 15px;
+}
+.menu__link
+{                             
+    font: 500 16px 'Montserrat', sans-serif;
+    color: black;
+    text-decoration: none;    /*убирает подчеркивание текста ссылок*/
+}
+.menu__button
+{
+    margin-left: 22px;
+    background-color: black; 
+    color: white; 
+    font: 500 16px 'Montserrat', sans-serif;
+    text-decoration: none;
+    padding: 18px 44px;
+    border-radius: 5px;
+}
+.top
+{
+    position: absolute;              /*чтобы картинка наложилась*/
+    top: 91px;
+}
+.top__row                                  /*           TOP        */       
+{
+    display: flex;
+    padding: 0 75px 0 250px ;               /*отступы этого ряда посмотреть 79 261*/
+    justify-content: space-between;        /*прижала к краям*/
+    align-items: center;   
+}
+.top__img
+{
+    padding-top: 90px; 
+    margin-left: 10px;  
+}
+.top__title
+{
+    font: 600 100px 'Montserrat', sans-serif;
+    margin: 17px 22px 22px 0;
+}
+.top__title span, h2 span
+{
+    color: #EE58B6;
+}
+.top__text
+{
+    font: 26px 'Roboto Condensed', sans-serif;
+    margin-bottom: 63px;
+}
+.top__button 
+{
+    background-color: black; 
+    color: white; 
+    font: 500 16px 'Montserrat', sans-serif;
+    text-decoration: none;
+    padding: 18px 85px;
+    border-radius: 5px;
+}
+.start
+{   
+    background-color: black;  
+    margin-top: 775px;               /*чтобы картинка наложилась*/   
+    position: relative; 
+}
+.start__row
+{
+    display: flex;
+    padding: 0 220px;
+    height: 398px;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.start__body
+{
+    margin: 0px 56px 0px 55px; 
+    height: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;         /*чтобы картинка не увеличилась*/
+    flex-direction: column;
+    padding-bottom: 43px;
+}
+.start__text
+{
+    font: 22px 'Roboto Condensed', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+.title
+{
+    font: 500 48px 'Montserrat', sans-serif; 
+}
+.absence_title, .deadline_title
+{
+    margin: 110px 0 33px 0;
+}
+.absence_text, .deadline_text
+{ 
+    font: 18px 'Roboto Condensed', sans-serif;
+}
+.absence__row, .deadline__row
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 385px 58px 354px;
+}
+.deadline__row
+{
+    padding: 8px 360px 75px 412px ;
+}
+.deadline__body
+{
+    margin: 19px 0px 140px 0px;
+}
+.can__title
+{
+    text-align: center;
+    margin: 0 0 45px 0;
+}
+.can__row
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 10px 271px 257px;
+}
+.can__blocks
+{
+    background-color: black;
+    width: 320px;
+    height: 190px;
+    padding: 0px 0px 0px 39px;              /*верх право низ лево*/
+    margin: 15px 15px;               /*отступы между блоками*/
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;        /*по середине блока*/
+    align-items: flex-start;
+    overflow: hidden;               /*чтобы картинка не увеличилась*/
+    flex-direction: column;         /*внутр эл располог по вертикали*/
+}
+.can__text 
+{
+    color: white;
+    font: 18px 'Roboto Condensed', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;   
+}
+
+.footer 
+{
+    background-color: black;
+}
+
+.footer__row
+{
+    display: flex;
+    height: 108px;
+    justify-content: center;
+    align-items: center;
+}
+
+
